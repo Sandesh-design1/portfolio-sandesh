@@ -17,7 +17,7 @@ export default function WorkSection() {
           }
         />
 
-        <main className="grid grid-cols-1 md:grid-cols-2 gap-9 items-stretch w-full px-4">
+        <main className="grid grid-cols-1 md:grid-cols-2 gap-9 items-stretch lg:w-5/6 px-4">
           {works.map((work) => (
             <WorkCard key={work.id} work={work} />
           ))}

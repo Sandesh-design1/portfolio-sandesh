@@ -16,7 +16,8 @@ const setJustify = (idx: number) => {
 
 export default function Contact() {
   return (
-    <footer id="contact" className="relative overflow-hidden">
+    <footer id="contact" className="relative overflow-hidden -mt-px">
+      {/* Background Image */}
       <Image
         className="absolute inset-0 -z-10 object-center lg:object-[25%_57%] scale-200 lg:scale-100"
         src="/backgrounds/footer.jpg"
@@ -24,12 +25,15 @@ export default function Contact() {
         fill
         style={{ objectFit: "cover" }}
       />
-      {/* Black Overlay */}
+
+      {/* Black Overlay: Darkens the whole image so text pops */}
       <div className="absolute inset-0 bg-black/70 -z-10" />
 
-      <div className="absolute -top-7 h-16 w-full bg-background blur-md z-0" />
+      {/* --- THE FIX: Gradient Fade Overlay --- */}
+      {/* This replaces the blur. It blends the section above (bg-background) into this section seamlessly */}
+      <div className="absolute top-0 left-0 w-full h-32 lg:h-40 bg-linear-to-b from-background via-background/60 to-transparent z-0 pointer-events-none" />
 
-      <main className="flex flex-col items-center justify-center gap-16 container mx-auto ">
+      <main className="flex flex-col items-center justify-center gap-16 container mx-auto relative z-10">
         <h1 className="text-[2rem] lg:text-[5rem] font-semibold mt-16 lg:mt-32">
           Let’s Work Together
         </h1>
