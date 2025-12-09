@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { brands } from "@/data/content";
 import SectionHeader from "../ui/SectionHeader";
+import LogoLoop from "../motion/LogoLoop";
 
 export default function Brands() {
   return (
@@ -19,17 +20,18 @@ export default function Brands() {
           title="Brands I’ve Worked For"
           description="Delivering thoughtful design solutions across diverse industries"
         />
-        <main className="flex justify-evenly items-center gap-6">
-          {brands.map((brand) => (
-            <div key={brand.name} className="relative h-28 w-40">
-              <Image
-                src={brand.logo}
-                alt={brand.name}
-                fill
-                className="object-contain"
-              />
-            </div>
-          ))}
+        <main className="mt-16">
+          <LogoLoop
+            logos={brands}
+            speed={60}
+            direction="left"
+            hoverSpeed={0}
+            gap={100}
+            scaleOnHover
+            fadeOut
+            fadeOutColor="#ffffff"
+            ariaLabel="Brands"
+          />
         </main>
       </div>
     </section>

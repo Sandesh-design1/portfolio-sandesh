@@ -28,9 +28,9 @@ export const works = [
 ];
 
 export const brands = [
-  { name: "The Reward Store", logo: "/brands/the-reward-store.svg" },
-  { name: "Vananam", logo: "/brands/vananam.svg" },
-  { name: "maimai", logo: "/brands/maimai.svg" },
+  { alt: "The Reward Store", src: "/brands/the-reward-store.svg" },
+  { alt: "Vananam", src: "/brands/vananam.svg" },
+  { alt: "maimai", src: "/brands/maimai.svg" },
 ];
 
 export const contactInfo = [
@@ -40,8 +40,20 @@ export const contactInfo = [
 ];
 
 export const socialLinks = [
-  { key: "linkedin", icon: "/icons/social/linkedin.svg" },
-  { key: "behance", icon: "/icons/social/behance.svg" },
-  { key: "instagram", icon: "/icons/social/instagram.svg" },
-  { key: "x", icon: "/icons/social/x.svg" },
+  {
+    key: "linkedin",
+    icon: "/icons/social/linkedin.svg",
+    href: "https://www.linkedin.com/in/sandesh-kn999",
+  },
+  {
+    key: "behance",
+    icon: "/icons/social/behance.svg",
+    href: "https://www.behance.net/sandeshkn",
+  },
+  {
+    key: "instagram",
+    icon: "/icons/social/instagram.svg",
+    href: "https://www.instagram.com/sandesh._._._",
+  },
+  { key: "x", icon: "/icons/social/x.svg", href: "https://x.com/" },
 ];
