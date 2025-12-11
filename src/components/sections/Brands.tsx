@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { brands } from "@/data/content";
 import SectionHeader from "../ui/SectionHeader";
 import LogoLoop from "../motion/LogoLoop";
@@ -6,7 +5,7 @@ import LogoLoop from "../motion/LogoLoop";
 export default function Brands() {
   return (
     <section id="brands">
-      <div className="relative z-0 p-8 bg-[#191918] mt-16">
+      <div className="relative z-0 mt-16 bg-[#191918] p-8">
         <div
           style={{
             backgroundImage: "url('/backgrounds/grid.png')",
@@ -26,7 +25,7 @@ export default function Brands() {
             speed={60}
             direction="left"
             hoverSpeed={0}
-            gap={100}
+            gap={180}
             scaleOnHover
             fadeOut
             fadeOutColor="#ffffff"

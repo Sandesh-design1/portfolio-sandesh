@@ -18,7 +18,7 @@ export const useScrollTo = () => {
     }
 
     lenis.scrollTo(target, {
-      offset: -25,
+      offset: -100,
       duration: 2,
     });
   };

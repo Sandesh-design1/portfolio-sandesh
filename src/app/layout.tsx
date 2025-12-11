@@ -3,6 +3,7 @@ import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/layout/Navigation";
 import { LenisProvider } from "@/context/LenisContext";
+import GlowingCursor from "@/components/cursor/GlowingCursor";
 
 const bricolageGrotesque = Bricolage_Grotesque({
   variable: "--font-bricolage-grotesque",
@@ -21,10 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bricolageGrotesque.variable} text-primary  antialiased`}
+        className={`${bricolageGrotesque.variable} text-primary antialiased`}
       >
         <LenisProvider>
           <Navigation />
+          <GlowingCursor />
           {children}
         </LenisProvider>
       </body>

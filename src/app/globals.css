@@ -10,7 +10,13 @@
 }
 
 body {
+  cursor: none;
   font-family: "Bricolage Grotesque", sans-serif;
   font-optical-sizing: auto;
   @apply bg-background;
+}
+
+a,
+button {
+  cursor: none; /* Or keep 'none' if you want the bulb to stay */
 }
