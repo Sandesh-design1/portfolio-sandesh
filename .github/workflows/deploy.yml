@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -19,15 +19,15 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Next.js app
         run: npm run build
 
-      - name: Deploy to Vercel
+      - name: Deploy to Vercel (CLI v50+)
         run: |
           npm i -g vercel@latest
-          vercel --prod \
+          vercel deploy --prod \
             --token ${{ secrets.VERCEL_TOKEN }} \
-            --org ${{ secrets.VERCEL_ORG_ID }} \
-            --project ${{ secrets.VERCEL_PROJECT_ID }}
+            --scope ${{ secrets.VERCEL_SCOPE }} \
+            --project ${{ secrets.VERCEL_PROJECT_NAME }}
