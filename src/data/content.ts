@@ -1,32 +1,5 @@
 // src/data/content.ts
 
-export const works = [
-  {
-    id: 1,
-    title: "The Reward Store Website",
-    description: "Company Main Website | 5 Min Read",
-    image: "/works/the-reward-store.png",
-  },
-  {
-    id: 2,
-    title: "MaiMai Resturant Website",
-    description: "Restaurant Main Website with Table Reservation | 5 Min Read",
-    image: "/works/maimai.png",
-  },
-  {
-    id: 3,
-    title: "Flight Booking Feature",
-    description: "B2B & B2C Feature In SAAS Product | 5min Read",
-    image: "/works/flight-booking.png",
-  },
-  {
-    id: 4,
-    title: "Point to Currency Mapping",
-    description: "B2B & B2C Feature In SAAS Product | 5min Read",
-    image: "/works/point-to-currency.png",
-  },
-];
-
 export const brands = [
   { alt: "The Reward Store", src: "/brands/the-reward-store.svg" },
   { alt: "Vananam", src: "/brands/vananam.svg" },

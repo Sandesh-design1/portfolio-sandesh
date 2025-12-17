@@ -15,7 +15,7 @@ export default function Hero() {
 
       <div className="relative flex h-[50vh] flex-col justify-between lg:flex-row">
         {/* Hero Right */}
-        <div className="absolute top-2/12 left-[5%] space-y-2 lg:top-1/2">
+        <div className="absolute top-2/12 left-[5%] space-y-2 lg:top-3/4">
           <BlurText
             text=" Hey I’m Sandesh"
             delay={150}

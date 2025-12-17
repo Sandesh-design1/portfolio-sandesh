@@ -1,4 +1,4 @@
-import { works } from "@/data/content";
+import { works } from "@/data/works";
 import WorkCard from "@/components/cards/WorkCard";
 import SectionHeader from "@/components/ui/SectionHeader";
 
