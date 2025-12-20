@@ -1,9 +1,10 @@
 import Image from "next/image";
 import BlurText from "../motion/BlurText";
+import ScrollDown from "../ui/ScrollDown";
 
 export default function Hero() {
   return (
-    <section id="home" className="h-screen">
+    <section id="home" className="relative h-screen">
       <Image
         src="/backgrounds/hero.jpg"
         alt="Hero image"
@@ -23,7 +24,7 @@ export default function Hero() {
             direction="top"
             className="text-primary-dark text-[1.75rem] font-bold lg:text-[4rem]"
           />
-          <p className="text-primary-dark md:text-secondary-dark mx-4 w-7/12 text-sm lg:text-xl">
+          <p className="text-primary-dark md:text-secondary-dark mx-2 w-7/12 text-sm lg:mx-4 lg:text-xl">
             I’m a Product Designer who loves turning complex problems into
             simple, functional experience.
           </p>
@@ -36,6 +37,7 @@ export default function Hero() {
           </p>
         </div>
       </div>
+      <ScrollDown />
     </section>
   );
 }

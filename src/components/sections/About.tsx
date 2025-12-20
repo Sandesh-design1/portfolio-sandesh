@@ -5,16 +5,16 @@ import ScrollReveal from "../motion/ScrollReveal";
 export default function About() {
   return (
     <section id="about-me">
-      <div className="mt-32 mb-20 ">
+      <div className="mt-32 mb-20">
         <SectionHeader badge="About me" title="Beyond the work" />
 
-        <main className="flex lg:flex-row flex-col items-center gap-10 w-5/6 lg:w-4/6 container mx-auto lg:mt-16">
-          <div className="relative w-full min-w-sm aspect-square  border border-[#38332C] p-8 rounded-md">
+        <main className="container mx-auto flex w-5/6 flex-col items-center gap-4 lg:mt-16 lg:w-4/6 lg:flex-row lg:gap-10">
+          <div className="relative aspect-square w-full min-w-sm rounded-md border border-[#38332C] p-8">
             <Image
               src="/backgrounds/about-me.png"
               alt="About me"
               fill
-              className="object-contain rounded p-4 bg-[#191918]"
+              className="rounded bg-[#191918] object-contain p-4"
             />
           </div>
           <ScrollReveal

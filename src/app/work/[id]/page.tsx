@@ -13,7 +13,7 @@ const MyWork = async ({ params }: Props) => {
   const selectedWork = works.find((w) => w.id === Number(id));
 
   return (
-    <section className="relative z-999 container mx-auto min-h-screen bg-[#272727] px-16 py-16 lg:px-32">
+    <section className="relative z-999 container mx-auto min-h-screen bg-[#272727] px-8 py-24 lg:px-32">
       <Link
         href={{
           hash: "#work",
@@ -24,7 +24,9 @@ const MyWork = async ({ params }: Props) => {
         <Image src="/icons/close.svg" alt="close" width={48} height={48} />
       </Link>
       <header className="flex flex-col justify-start gap-y-2">
-        <h1 className="text-primary2 text-[2.75rem]">{selectedWork?.title}</h1>
+        <h1 className="text-primary2 text-[1.75rem] lg:text-[2.75rem]">
+          {selectedWork?.title}
+        </h1>
         <div className="flex justify-between">
           <span className="text-secondary2 text-sm">
             {selectedWork?.readTime} Min Read
@@ -43,7 +45,7 @@ const MyWork = async ({ params }: Props) => {
           </Link>
         </div>
       </header>
-      <main className="mt-8 flex flex-col gap-y-16">
+      <main className="mt-8 flex flex-col gap-y-8 lg:gap-y-16">
         <div className="relative aspect-video w-full overflow-hidden rounded-lg">
           <Image
             src={selectedWork?.image || "/works/the-reward-store.png"}
@@ -52,14 +54,14 @@ const MyWork = async ({ params }: Props) => {
           />
         </div>
         <div
-          className="flex flex-col gap-y-8 px-16 *:text-lg *:text-[#A4A4A4] [&_ul]:list-disc [&_ul_li]:ms-8"
+          className="flex flex-col gap-y-8 px-8 *:text-sm *:text-[#A4A4A4] lg:px-16 *:lg:text-lg [&_ul]:list-disc [&_ul_li]:ms-8"
           dangerouslySetInnerHTML={{
             __html: selectedWork?.content as TrustedHTML,
           }}
         ></div>
 
         <aside className="mt-8 flex flex-col gap-y-4">
-          <h2 className="text-primary2 text-4xl font-medium">
+          <h2 className="text-primary2 text-[1.5rem] font-medium lg:text-4xl">
             My Other Projects
           </h2>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
