@@ -9,12 +9,12 @@ export default function About() {
         <SectionHeader badge="About me" title="Beyond the work" />
 
         <main className="container mx-auto flex w-5/6 flex-col items-center gap-4 lg:mt-16 lg:w-4/6 lg:flex-row lg:gap-10">
-          <div className="relative aspect-square w-full min-w-sm rounded-md border border-[#38332C] p-8">
+          <div className="relative overflow-hidden aspect-square w-full min-w-sm rounded-md border-[1rem] border-[#191918] ring ring-[#38332C] bg-[#191918]">
             <Image
-              src="/backgrounds/about-me.png"
+              src="/backgrounds/about-me.jpeg"
               alt="About me"
               fill
-              className="rounded bg-[#191918] object-contain p-4"
+              className="rounded object-cover scale-200 p-4 object-[40%_80%]"
             />
           </div>
           <ScrollReveal

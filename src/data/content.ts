@@ -7,9 +7,9 @@ export const brands = [
 ];
 
 export const contactInfo = [
-  { key: "email", content: "sandeshkn34@gmail.com", icon: "/icons/mail.svg" },
-  { key: "phone", content: "+91 97417 91394", icon: "/icons/phone.svg" },
-  { key: "resume", content: "My Resume", icon: "/icons/resume.svg" },
+  { key: "email", content: "sandeshkn34@gmail.com", icon: "/icons/mail.svg", href: "mailto:sandeshkn34@gmail.com" },
+  { key: "phone", content: "+91 97417 91394", icon: "/icons/phone.svg", href: "tel:+919741791394" },
+  { key: "resume", content: "My Resume", icon: "/icons/resume.svg", href: "https://drive.google.com/file/d/1bNwImeyu5ptjsoeFV4FgYhSvxFv2kooW/view?usp=sharing" },
 ];
 
 export const socialLinks = [

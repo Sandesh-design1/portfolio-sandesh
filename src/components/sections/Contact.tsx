@@ -21,7 +21,6 @@ const setJustify = (idx: number) => {
 export default function Contact() {
   return (
     <footer id="contact" className="relative -mt-px overflow-hidden">
-      {/* Background Image */}
       <Image
         className="absolute inset-0 -z-10 scale-200 object-center lg:scale-100 lg:object-[25%_57%]"
         src="/backgrounds/footer.jpg"
@@ -47,16 +46,18 @@ export default function Contact() {
         </ScrollFloat>
         <div className="relative mx-auto grid w-5/6 grid-cols-1 gap-y-4 lg:grid-cols-3">
           <div className="bg-primary/80 absolute -top-4 h-0.5 w-full" />
-          {contactInfo.map(({ key, content, icon }, idx) => (
-            <div
+          {contactInfo.map(({ key, content, icon, href }, idx) => (
+            <Link
               key={key}
+              href={href}
+              target={key === "resume" ? "_blank" : "_self"}
               className={`flex items-center gap-2 ${setJustify(idx)}`}
             >
               <Image src={icon} alt={key} width={24} height={24} />
               <span className="text-base font-medium lg:text-xl">
                 {content}
               </span>
-            </div>
+            </Link>
           ))}
         </div>
 
